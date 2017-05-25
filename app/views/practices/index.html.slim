@@ -1,0 +1,20 @@
+h1 Listing practices
+
+table
+  thead
+    tr
+      th Day
+      th
+      th
+      th
+
+  tbody
+    - @practices.each do |practice|
+      tr
+        td = practice.day
+        td = link_to 'Edit', edit_practice_path(practice)
+        td = link_to 'Destroy', practice, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Practice', new_practice_path

@@ -1,0 +1,17 @@
+# == Schema Information
+#
+# Table name: practices
+#
+#  id         :integer          not null, primary key
+#  day        :date             not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2016-10-25
+
+two:
+  day: 2016-10-25

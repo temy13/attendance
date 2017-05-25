@@ -1,0 +1,3 @@
+ul
+- Member.parts.each do |part, part_cd |
+  li = link_to t("activerecord.enum.part.#{part}") + 'の練習参加登録', participations_path, part_cd: part_cd

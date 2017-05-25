@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: participations
+#
+#  id          :integer          not null, primary key
+#  member_id   :integer          not null
+#  practice_id :integer          not null
+#  state_cd    :integer          default(0)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  member_id: MyString
+  integer,: MyString
+  practice_id: MyString
+  integer: MyString
+  state_cd: MyString
+  integer: MyString
+
+two:
+  member_id: MyString
+  integer,: MyString
+  practice_id: MyString
+  integer: MyString
+  state_cd: MyString
+  integer: MyString

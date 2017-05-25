@@ -1,0 +1,16 @@
+h1 Participations#index
+p Find me in app/views/participations/index.html.slim
+p PC版は全部出す（パート情報をパラメータ) スマホ版は名前一覧だけ？
+
+table
+  thead
+    tr
+      th 名前
+      - @practices.each do |practice|      
+        th = practice.day
+  tbody
+    - @members.each do |member|
+      tr 
+        td = member.name
+        - @practices.each do |practice|
+          td = practice.id

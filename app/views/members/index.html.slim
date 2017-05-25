@@ -1,0 +1,28 @@
+h1 Listing members
+
+table
+  thead
+    tr
+      th Name
+      th Part cd
+      th Graduate year
+      th Is join
+      th Role
+      th
+      th
+      th
+
+  tbody
+    - @members.each do |member|
+      tr
+        td = member.name
+        td = member.part
+        td = member.graduate_year
+        td = member.is_join
+        td = member.role
+        td = link_to 'Edit', edit_member_path(member)
+        td = link_to 'Destroy', member, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Member', new_member_path
